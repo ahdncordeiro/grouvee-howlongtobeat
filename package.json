@@ -1,0 +1,41 @@
+{
+  "name": "grouvee-howlongtobeat",
+  "version": "0.1.0",
+  "main": "build/grouvee-howlongtobeat.js",
+  "author": "André Cordeiro <ahdncordeiro@gmail.com>",
+  "license": "WTFPL",
+  "scripts": {
+    "build": "tsc",
+    "pretest": "tsc --sourcemap",
+    "test": "nyc mocha dist/test/**/*.test.js",
+    "browser": "browserify src/main/howlongtobeat.ts -p tsify > build/grouvee-howlongtobeat.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahdncordeiro/grouvee-howlongtobeat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahdncordeiro/grouvee-howlongtobeat/issues"
+  },
+  "homepage": "https://github.com/ahdncordeiro/grouvee-howlongtobeat",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "fast-levenshtein": "^2.0.6",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/chai-as-promised": "^0.0.30",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.14",
+    "browserify": "^16.2.3",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "codecov": "^3.1.0",
+    "hoek": "^5.0.4",
+    "mocha": "^5.2.0",
+    "nyc": "^11.4.1",
+    "tsify": "^4.0.1",
+    "typescript": "^2.4.2"
+  }
+}
