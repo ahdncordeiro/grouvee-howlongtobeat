@@ -1,14 +1,14 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const chai = require("chai");
-const chaiAsPromised = require("chai-as-promised");
-const htmlscraper_1 = require("../main/htmlscraper");
+exports.__esModule = true;
+var chai = require("chai");
+var chaiAsPromised = require("chai-as-promised");
+var htmlscraper_1 = require("../main/htmlscraper");
 chai.use(chaiAsPromised);
-const expect = chai.expect;
-const assert = chai.assert;
-describe('Testing HtmlScraper', () => {
-    describe('Test for illegal urls', () => {
-        it('should throw an error', () => {
+var expect = chai.expect;
+var assert = chai.assert;
+describe('Testing HtmlScraper', function () {
+    describe('Test for illegal urls', function () {
+        it('should throw an error', function () {
             return assert.isRejected(new htmlscraper_1.HtmlScraper().detailHtml('bla'), Error);
         });
     });
