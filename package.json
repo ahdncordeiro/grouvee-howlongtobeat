@@ -22,8 +22,9 @@
   },
   "homepage": "https://github.com/ahdncordeiro/grouvee-howlongtobeat",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
+    "cheerio": "^1.0.0-rc.3",
     "fast-levenshtein": "^2.0.6",
+    "lodash": "^4.17.14",
     "request": "^2.88.0"
   },
   "devDependencies": {
